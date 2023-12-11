@@ -52,7 +52,7 @@ else:
     SECRET_KEY = env.get_value('PORD_SECRET_KEY')
 
 if DEBUG:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['blast.specialdispatcher.store']
 
 else:
     ALLOWED_HOSTS = env('ALLOWED_PROD_HOSTS').replace(' ', '').split(',')
